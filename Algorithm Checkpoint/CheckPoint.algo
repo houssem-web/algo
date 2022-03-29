@@ -1,0 +1,25 @@
+ALGORITHM CheckPoint
+VAR
+longch(ch)
+
+
+var nmWords = 1;
+for (int i = 0; i < ch.length(); i++)
+{
+    if (ch[i] == " ")
+    {
+        nbWords++;
+    }
+}
+
+
+
+var voyNb = 0;
+var voy = ["a", "e", "o", "i", "u", "y"];
+for (int i = 0; i < ch.length(); i++)
+{
+    if (voy.contains(ch[i].toLower()))
+    {
+        voyNb++;
+    }
+}
